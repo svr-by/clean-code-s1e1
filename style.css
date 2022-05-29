@@ -33,7 +33,7 @@
 .task-label, .task-input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .adding-row {
   display: flex;
@@ -116,7 +116,7 @@
   width: 226px;
 }
 .task-input {
-  width: 226px
+  width: 226px;
 }
 .button-img {
   height: 2em;
@@ -135,12 +135,12 @@
 
 /* Edit Task */
 .task-input:not(.task-input-new) {
-  display: none
+  display: none;
 }
 
 .task.edit-mode .task-input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .task.edit-mode .task-label {
