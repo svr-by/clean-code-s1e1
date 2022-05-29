@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header-img {
+.header__img {
   width: 100%;
 }
-.header-link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -30,29 +30,25 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task-label, 
-.task-input {
+.task__label, 
+.task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
-}
-.adding-row {
-  display: flex;
-  padding: 20px 0;
 }
 .list {
   margin: 0;
   padding: 0px;
 }
 .task, 
-.list-title {
+.title {
   list-style: none;
 }
-.task-input, 
-.task-btn {
+.task__input, 
+.task__btn {
   outline: none;
 }
-.task-btn {
+.task__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -61,11 +57,11 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.task-btn:hover {
+.task__btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
-.list-title {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -74,7 +70,7 @@
   margin: 0;
   text-transform: uppercase;
 }
-.task-input {
+.task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -86,12 +82,12 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
-.task-input:focus {
+.task__input:focus {
   color: #333;
 }
 
 /* New Task */
-.task-input-new {
+.task__input_creater {
   width: 318px;
 }
 
@@ -105,47 +101,50 @@
   justify-content: space-between;
   align-items: center;
 }
+.task_creater {
+  border-bottom: none;
+}
 .task > * {
   vertical-align: middle;
 }
 
-.task-checkbox {
+.task__checkbox {
   margin: 0 10px;
 }
-.task-label {
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.task-input {
+.task__input {
   width: 226px;
 }
-.button-img {
+.task__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.button-img:hover {
+.task__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task-label {
+.task_completed .task__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-input:not(.task-input-new) {
+.task__input:not(.task__input_creater) {
   display: none;
 }
 
-.task.edit-mode .task-input {
+.task_edit-mode .task__input {
   display: inline-block;
   width: 224px;
 }
 
-.task.edit-mode .task-label {
+.task_edit-mode .task__label {
   display: none;
 }
